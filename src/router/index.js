@@ -72,6 +72,24 @@ const routes = [
 
     }
   },
+  {
+    path: '/address',
+    name: 'AddAddress',
+    component:() => import('../views/profile/Address'),
+    meta:{
+      title:'地址管理',
+      isAuthRequired:true
+    }
+  },
+  {
+    path: '/addressedit',
+    name: 'AddressEdit',
+    component:() => import('../views/profile/AddressEdit'),
+    meta:{
+      title:'编辑地址',
+      isAuthRequired:true
+    }
+  },
   
 ]
 

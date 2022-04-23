@@ -31,7 +31,7 @@
         <div class="icon"><i class="iconfont icon-wode"></i></div>
         <div>我的</div>
       </router-link> 
-</div>
+    </div>
   </div>
 </template>
 <script>
@@ -62,7 +62,7 @@ export default{
   position: fixed;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom:0px;
   box-shadow: 0 -3px 1px rgba(100,100,100,0.1);
   a {
     color: #2c3e50;
@@ -79,7 +79,7 @@ export default{
   .tab-bar-item .icon{
     width: 24px;
     height: 24px;
-    margin-top: 3px;
+    // margin-top: 3px;
     display: inline-block;
   }
 }

@@ -27,6 +27,7 @@ import {
     AddressEdit,
     AddressList,
     Popup,
+    Icon,
 } from 'vant';
 
 
@@ -43,5 +44,5 @@ createApp(App)
     .use(VanImage).use(Tag).use(Button)
     .use(Form).use(Field).use(CellGroup)
     .use(CheckboxGroup).use(Stepper).use(Checkbox).use(SwipeCell).use(SubmitBar)
-    .use(AddressEdit).use(AddressList).use(Popup)
+    .use(AddressEdit).use(AddressList).use(Popup).use(Icon)
     .use(store).use(router).mount('#app')
