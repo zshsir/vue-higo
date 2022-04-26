@@ -28,6 +28,10 @@ import {
     AddressList,
     Popup,
     Icon,
+    Grid, 
+    GridItem,
+    PullRefresh,
+    List
 } from 'vant';
 
 
@@ -45,4 +49,5 @@ createApp(App)
     .use(Form).use(Field).use(CellGroup)
     .use(CheckboxGroup).use(Stepper).use(Checkbox).use(SwipeCell).use(SubmitBar)
     .use(AddressEdit).use(AddressList).use(Popup).use(Icon)
+    .use(Grid).use(GridItem).use(PullRefresh).use(List)
     .use(store).use(router).mount('#app')

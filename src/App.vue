@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- <router-view/> -->
 
-    <!-- <router-view v-slot="{ Component }">
+    <router-view v-slot="{ Component }">
       <transition>
         <keep-alive>
           <component :is="Component" />
         </keep-alive>
       </transition>
-    </router-view> -->
+    </router-view>
 
     <div id="nav">
       <router-link to="/" class="tab-bar-item">
@@ -21,7 +21,7 @@
       </router-link> 
       <router-link to="/shotCart" class="tab-bar-item">
         <div class="icon">
-          <van-badge :content="$store.state.cartCount" max="9">
+          <van-badge :content="$store.state.cartCount" max="9" class='icon-gwc'>
           <i class="iconfont icon-gouwuche"></i>
          </van-badge>
           </div>
@@ -64,6 +64,7 @@ export default{
   right: 0;
   bottom:0px;
   box-shadow: 0 -3px 1px rgba(100,100,100,0.1);
+  z-index: 10000;
   a {
     color: #2c3e50;
 
@@ -79,8 +80,10 @@ export default{
   .tab-bar-item .icon{
     width: 24px;
     height: 24px;
-    // margin-top: 3px;
     display: inline-block;
+  }
+  .icon-gwc{
+    margin-top: 5px;
   }
 }
 </style>

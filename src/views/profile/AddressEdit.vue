@@ -27,11 +27,11 @@ import { reactive, onMounted, toRefs, computed } from "vue";
 import { Toast } from "vant";
 import {
   addAddress,
-  EditAddress,
-  DeleteAddress,
+  editAddress,
+  deleteAddress,
   getAddressDetail,
 } from "../../network/address";
-import { tdist } from "../../network/address";
+import { tdist } from "../../../utils/address";
 import { useRoute, useRouter } from "vue-router";
 export default {
   name:'AddressEdit',
@@ -147,7 +147,8 @@ export default {
       // 如果类型为 编辑 状态
       if (state.type == "edit") {
         // 调用 修改数据接口
-        EditAddress(state.addressId, params); // params传递修改好的数据
+        editAddress(state.addressId, params); // params传递修改好的数据
+
       } else if (state.type == "add") {
         // 调用 添加数据接口
         addAddress(params);
@@ -161,7 +162,7 @@ export default {
     // 删除地址
     const onDelete = () => {
       // 传递删除的id，直接调用接口
-      DeleteAddress(state.addressId).then((res) => {
+      deleteAddress(state.addressId).then((res) => {
         Toast("删除成功");
         // 删除成功后，1秒中回到原来位置
         setTimeout(() => {

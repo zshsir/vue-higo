@@ -277,7 +277,7 @@ export default defineComponent({
     }
   }
   .submit-all {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
     .van-checkbox {
       margin-left: 0px;
     }

@@ -13,7 +13,7 @@ export function addAddress(params){
 export function editAddress(id,params){
     return request({
         url:`/api/address/${id}`,
-        method:'put',
+        method:'PUT',
         params
     })
 }

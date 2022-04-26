@@ -45,7 +45,7 @@ export default {
         // 如果data长度为0的话
         if (res.data.length == 0) {
           // 初始化空数组list
-          satae.list = [];
+          state.list = [];
           return;
         }
         // 不为空, map遍历数据

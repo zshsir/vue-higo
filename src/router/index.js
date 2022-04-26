@@ -90,6 +90,33 @@ const routes = [
       isAuthRequired:true
     }
   },
+  {
+    path: '/createorder',
+    name: 'CreateOrder',
+    component:() => import('../views/order/CreateOrder'),
+    meta:{
+      title:'创建订单',
+      isAuthRequired:true
+    }
+  },
+  {
+    path: '/order',
+    name: 'Order',
+    component:() => import('../views/order/Order'),
+    meta:{
+      title:'订单管理',
+      isAuthRequired:true
+    }
+  },
+  {
+    path: '/orderDetail',
+    name: 'OrderDetail',
+    component:() => import('../views/order/OrderDetail'),
+    meta:{
+      title:'订单详情',
+      isAuthRequired:true
+    }
+  },
   
 ]
 
